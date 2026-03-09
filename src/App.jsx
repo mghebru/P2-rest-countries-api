@@ -19,6 +19,7 @@ function App() {
             <Route path="/" element={<CountriesList />} />
             <Route path="/country/:name" element={<CountryDetails key={location.pathname} />} />
           </Routes>
+          
       </CountriesProvider>
       </ThemeProvider>
     </>

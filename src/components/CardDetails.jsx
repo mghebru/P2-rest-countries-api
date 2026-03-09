@@ -37,11 +37,11 @@ export default function CountryDetails() {
         : [];
 
     // bordering countries
-    const borderCountries = country.borders
-        ? countries.filter((c) => country.borders.includes(c.cca3))
-        : [];
-
-
+    const borderCountries = countries.filter(
+  (c) => country.borders?.includes(c.cca3)
+);
+console.log("Borders:", country.borders);
+console.log("First country cca3:", countries[0]?.cca3);
     return (
 
 
@@ -120,7 +120,7 @@ export default function CountryDetails() {
                 </div>
             </div>
 
-        </div>
+         </div>
 
     );
 }
